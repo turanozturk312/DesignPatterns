@@ -1,4 +1,4 @@
-package org.example.Proxy;
+package org.example.Proxy.productserviceexample;
 
 public interface ProductService {
     
