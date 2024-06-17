@@ -1,4 +1,4 @@
-package org.example.Proxy.beanhotswappingexample;
+package org.example.Proxy.hotswappingexample;
 
 public class DataSourceFactory {
 
@@ -8,9 +8,9 @@ public class DataSourceFactory {
 
         if(DataSourceFactory.currentDataSource != null) return currentDataSource;
 
-        MasterDatabaseDataSource masterDatabaseDataSource = new MasterDatabaseDataSource();
+        MasterDatabaseDataSource masterDatabaseDataSource = new MasterDatabaseDataSource("Master Database");
     
-        SlaveDatabaseDataSource slaveDatabaseDataSource = new SlaveDatabaseDataSource();
+        SlaveDatabaseDataSource slaveDatabaseDataSource = new SlaveDatabaseDataSource("Slave Database");
         
         DataSourceProxy dataSourceProxy = new DataSourceProxy(masterDatabaseDataSource, slaveDatabaseDataSource);
 
