@@ -1,4 +1,4 @@
-package org.example.Proxy.jdkroxy;
+package org.example.Proxy.jdkproxy;
 
 public class UserServiceImpl implements UserService{
 

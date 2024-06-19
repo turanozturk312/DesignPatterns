@@ -1,7 +1,6 @@
-package org.example.Proxy.jdkroxy;
+package org.example.Proxy.jdkproxy;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Proxy;
 
 public class JdkProxyMain {
 
