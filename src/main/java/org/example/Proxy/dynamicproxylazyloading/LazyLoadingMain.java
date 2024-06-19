@@ -18,6 +18,21 @@ public class LazyLoadingMain {
         System.out.println("customer's getoOrders method invocated");
         customerFromDatabase.getOrders();
         System.out.println(customerFromDatabase);
+
+        /**OUTPUT OF PROGRAM
+         *
+         * Customer fetched
+         * Orders not fetched yet
+         * Customer{id=1, name='turanozturk', orders=[]}
+         *
+         * *********
+         *
+         * If we want get orders, LazyLoader load orders from database
+         * customer's getoOrders method invocated
+         * Customer{id=1, name='turanozturk', orders=[{id=2, description='Food'}, {id=1, description='Technology'}]}
+         *
+         */
+
     }
 
 }
